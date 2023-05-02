@@ -1,19 +1,26 @@
-Consider the following operation - we take a positive integer nand replace it with the sum of its prime factors (if a prime number is presented multiple times in the factorization of n, then it's counted the same number of times in the sum). This operation is applied sequentially first to the given number, then to the first result, then to the second result and so on, until the result remains the same.
-
-Given any number, find the final result of the operation.
+MinhNguyet Đơn giản 200 Điểm
+ 
+English
+GCPD (Greatest Common Prime Divisor) is defined as the largest prime number that divides both given positive integers. Your task is to find GCPD of the given integers a and b.
 
 Example
 
-For n = 24, the output should be factorSum(n) = 5.
-24 -> (2 + 2 + 2 + 3) = 9 -> (3 + 3) = 6 -> (2 + 3) = 5 -> 5.
-So the answer for n = 24 is 5.
+For a = 12 and b = 18, the output should be greatestCommonPrimeDivisor(a, b) = 3;
+For a = 12 and b = 13, the output should be greatestCommonPrimeDivisor(a, b) = -1.
 Input/Output
 
 [execution time limit] 0.5 seconds
 
-[input] integer n
+[input] integer a
 
 Guaranteed constraints:
-2 ≤ n ≤ 200.
+2 ≤ a ≤ 150.
+
+[input] integer b
+
+Guaranteed constraints:
+2 ≤ b ≤ 150.
 
 [output] integer
+
+GCPD of a and b or -1 if it doesn't exist.
